@@ -1,7 +1,7 @@
 name: Data problem
 description: Sheets are missing, or an upgrade replaced, damaged or lost your data.
 title: "[Data] "
-labels: ["data", "needs-info"]
+labels: ["data"]
 body:
   - type: markdown
     attributes:
