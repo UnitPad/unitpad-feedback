@@ -1,0 +1,35 @@
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Ask how to do something in UnitPad, or why a result is what it is.
+
+        > [!IMPORTANT]
+        > If something is broken, use **Open feedback: Problem report** in the app instead.
+
+        Everything you post here is public. Remove anything private from a sheet before you share it.
+
+  - type: textarea
+    id: question
+    attributes:
+      label: What is your question?
+      description: What you want to know, and what you tried.
+    validations:
+      required: true
+
+  - type: textarea
+    id: sheet
+    attributes:
+      label: The sheet
+      description: Paste the text, with anything private removed. Leave this empty if it does not matter.
+      render: text
+    validations:
+      required: false
+
+  - type: checkboxes
+    id: confirm
+    attributes:
+      label: Before posting
+      options:
+        - label: I have removed anything private from what I am sharing. Everything here is public.
+          required: true

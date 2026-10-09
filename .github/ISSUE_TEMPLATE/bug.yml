@@ -1,0 +1,88 @@
+name: Problem report
+description: Something is broken or behaves unexpectedly.
+title: "[Problem] "
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Use this when something is broken or behaves unexpectedly.
+
+        > [!IMPORTANT]
+        > For a question, [ask in Discussions](https://github.com/UnitPad/unitpad-feedback/discussions/new?category=q-a). For a missing or damaged sheet, use the [Data problem](https://github.com/UnitPad/unitpad-feedback/issues/new?template=data.yml) form.
+
+        If you came from UnitPad, **Open feedback: Problem report** filled in the build, browser and device. Check them.
+
+        Everything you post here is public. Remove anything private from a sheet before you share it.
+
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: What happened?
+      description: What you saw, and what you expected instead.
+    validations:
+      required: true
+
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      placeholder: |
+        1. Open ...
+        2. Type ...
+        3. See ...
+    validations:
+      required: true
+
+  - type: input
+    id: build
+    attributes:
+      label: UnitPad build
+      description: "Filled in for you by **Open feedback: Problem report**. Otherwise, use the \"last built\" time from **Show open source licenses**."
+      placeholder: e.g. 2026-06-02 14:03 UTC (4c1fddc)
+    validations:
+      required: false
+
+  - type: input
+    id: browser
+    attributes:
+      label: Browser and version
+      description: "Filled in for you by **Open feedback: Problem report**."
+      placeholder: e.g. Chrome 140, or Safari 18
+    validations:
+      required: true
+
+  - type: input
+    id: os
+    attributes:
+      label: OS and device
+      description: "Filled in for you by **Open feedback: Problem report**."
+      placeholder: e.g. macOS 15.3, or iPhone 15 on iOS 18.3
+    validations:
+      required: false
+
+  - type: textarea
+    id: environment
+    attributes:
+      label: Environment
+      description: "Filled in for you by **Open feedback: Problem report**. It holds your window size, colour scheme, the type of system and the settings you changed. With it, someone can open UnitPad as you had it. It holds no sheet, language, time zone or location. Add a language or time zone only if the problem is about dates or numbers."
+      render: json
+    validations:
+      required: false
+
+  - type: textarea
+    id: sheet
+    attributes:
+      label: A sheet that reproduces it
+      description: The app fills the box with a note about your sheet. Replace the note with the text from **Download sheet**, or leave it. Remove anything private first. For a long sheet, attach the file to a comment after you post.
+      render: text
+    validations:
+      required: false
+
+  - type: checkboxes
+    id: confirm
+    attributes:
+      label: Before posting
+      options:
+        - label: I have removed anything private from what I am sharing. Everything here is public.
+          required: true

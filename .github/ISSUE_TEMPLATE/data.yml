@@ -1,0 +1,93 @@
+name: Data problem
+description: Sheets are missing, or an upgrade replaced, damaged or lost your data.
+title: "[Data] "
+labels: ["data", "needs-info"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Use this when sheets are missing, or an upgrade replaced, damaged or lost your data.
+
+        > [!CAUTION]
+        > **Stop and preserve your data first.**
+        >
+        > If the app still opens, use **Download sheet** on every sheet you can reach. Keep the files somewhere outside the browser. Do **not** use **Erase data on this device**. Do not clear site data either. Those remove the only copy, so copy what you can first.
+
+        Then fill this in. This is the most important kind of report.
+
+        Everything you post here is public. Remove anything private from a sheet before you share it.
+
+  - type: textarea
+    id: what-changed
+    attributes:
+      label: What changed?
+      description: What you had, and what you see now.
+    validations:
+      required: true
+
+  - type: dropdown
+    id: when
+    attributes:
+      label: When did it happen?
+      options:
+        - After UnitPad updated
+        - After reopening an old browser tab or bookmark
+        - On first open in this browser
+        - After opening a file
+        - Other (say below)
+    validations:
+      required: true
+
+  - type: textarea
+    id: preserved
+    attributes:
+      label: What have you been able to copy out?
+      description: Which sheets, and how (**Download sheet**, **Copy sheet with results**, a screenshot).
+    validations:
+      required: false
+
+  - type: input
+    id: build
+    attributes:
+      label: UnitPad build
+      description: "Filled in for you by **Open feedback: Data problem**. Otherwise, use the \"last built\" time from **Show open source licenses**."
+      placeholder: e.g. 2026-06-02 14:03 UTC (4c1fddc)
+    validations:
+      required: false
+
+  - type: input
+    id: browser
+    attributes:
+      label: Browser and version
+      description: "Filled in for you by **Open feedback: Data problem**."
+      placeholder: e.g. Chrome 140, or Safari 18
+    validations:
+      required: false
+
+  - type: input
+    id: os
+    attributes:
+      label: OS and device
+      description: "Filled in for you by **Open feedback: Data problem**."
+      placeholder: e.g. macOS 15.3, or iPhone 15 on iOS 18.3
+    validations:
+      required: false
+
+  - type: textarea
+    id: environment
+    attributes:
+      label: Environment
+      description: "Filled in for you by **Open feedback: Data problem**. It holds your window size, colour scheme, the type of system and the settings you changed. With it, someone can open UnitPad as you had it. It holds no sheet, language, time zone or location. Add a language or time zone only if the problem is about dates or numbers."
+      render: json
+    validations:
+      required: false
+
+  - type: checkboxes
+    id: confirm
+    attributes:
+      label: Before posting
+      options:
+        - label: I have copied out what I can, and I understand the app cannot recover data I have not saved.
+          required: true
+        - label: I have removed anything private from what I am sharing. Everything here is public.
+          required: true

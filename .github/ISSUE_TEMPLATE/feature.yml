@@ -1,0 +1,39 @@
+name: Feature request
+description: An idea for something UnitPad should do.
+title: "[Feature] "
+labels: ["enhancement"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Use this for an idea for something UnitPad should do.
+
+        > [!IMPORTANT]
+        > For something broken, use the [Problem report](https://github.com/UnitPad/unitpad-feedback/issues/new?template=bug.yml) form.
+
+        Say what you are trying to do before you say how. Search the open requests first. If one fits, add a 👍 to it instead of opening a new one.
+
+        Everything you post here is public.
+
+  - type: textarea
+    id: problem
+    attributes:
+      label: What are you trying to do?
+      description: The problem or the job, before the solution.
+    validations:
+      required: true
+
+  - type: textarea
+    id: idea
+    attributes:
+      label: What would you like UnitPad to do?
+    validations:
+      required: false
+
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: What do you do today instead?
+      description: Another tool, a workaround, or nothing.
+    validations:
+      required: false
