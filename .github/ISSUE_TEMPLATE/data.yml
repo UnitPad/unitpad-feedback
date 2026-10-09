@@ -11,7 +11,7 @@ body:
         > [!CAUTION]
         > **Stop and preserve your data first.**
         >
-        > If the app still opens, use **Download sheet** on every sheet you can reach. Keep the files somewhere outside the browser. Do **not** use **Erase data on this device**. Do not clear site data either. Those remove the only copy, so copy what you can first.
+        > If the app still opens, use **Download sheet** to save the sheet you are looking at. With more than one sheet open, use **Download all sheets** to save them all in one zip. Sheets you closed are not in the zip, so reopen them first. Keep the files somewhere outside the browser. Do **not** use **Erase data on this device**. Do not clear site data either. Those remove the only copy, so copy what you can first.
 
         Then fill this in. This is the most important kind of report.
 
@@ -42,7 +42,7 @@ body:
     id: preserved
     attributes:
       label: What have you been able to copy out?
-      description: Which sheets, and how (**Download sheet**, **Copy sheet with results**, a screenshot).
+      description: Which sheets, and how (**Download sheet**, **Download all sheets**, **Copy sheet with results**, a screenshot).
     validations:
       required: false
 
