@@ -77,7 +77,7 @@ body:
     id: environment
     attributes:
       label: Environment
-      description: "Filled in for you by **Open feedback: Data problem**. It holds your window size, colour scheme, the type of system and the settings you changed. With it, someone can open UnitPad as you had it. It holds no sheet, language, time zone or location. Add a language or time zone only if the problem is about dates or numbers."
+      description: "Filled in for you by **Open feedback: Data problem**. It holds your window size, colour scheme, the type of system and the settings you changed. It also counts the stored sheets it could not read. With it, someone can open UnitPad as you had it. It holds no sheet, language, time zone or location. Add a language or time zone only if the problem is about dates or numbers."
       render: json
     validations:
       required: false
