@@ -1,5 +1,8 @@
 blank_issues_enabled: false
 contact_links:
+  - name: Wrong or outdated module data
+    url: https://github.com/UnitPad/modules/issues/new?template=correction.yml
+    about: A value, function or unit in a module disagrees with its source. This goes to the modules repository, where the numbers are fixed.
   - name: Question
     url: https://github.com/UnitPad/unitpad-feedback/discussions/new?category=q-a
     about: Ask a question, or share a sheet.

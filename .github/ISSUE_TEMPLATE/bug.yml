@@ -9,7 +9,7 @@ body:
         Use this when something is broken or behaves unexpectedly.
 
         > [!IMPORTANT]
-        > For a question, [ask in Discussions](https://github.com/UnitPad/unitpad-feedback/discussions/new?category=q-a). For a missing or damaged sheet, use the [Data problem](https://github.com/UnitPad/unitpad-feedback/issues/new?template=data.yml) form.
+        > For a question, [ask in Discussions](https://github.com/UnitPad/unitpad-feedback/discussions/new?category=q-a). For a missing or damaged sheet, use the [Data problem](https://github.com/UnitPad/unitpad-feedback/issues/new?template=data.yml) form. For something wrong or out of date in a module, use the [form in the modules repository](https://github.com/UnitPad/modules/issues/new?template=correction.yml).
 
         If you came from UnitPad, **Open feedback: Problem report** filled in the build, browser and device. Check them.
 

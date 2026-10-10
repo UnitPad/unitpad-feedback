@@ -6,7 +6,7 @@ body:
   - type: markdown
     attributes:
       value: |
-        Use this when sheets are missing, or an upgrade replaced, damaged or lost your data.
+        Use this when sheets are missing, or an upgrade replaced, damaged or lost your data. Something wrong or out of date in a module is not this: use the [form in the modules repository](https://github.com/UnitPad/modules/issues/new?template=correction.yml).
 
         > [!CAUTION]
         > **Stop and preserve your data first.**

@@ -11,6 +11,7 @@ and ideas go.
 | --- | --- |
 | Something is broken | [Problem report](https://github.com/UnitPad/unitpad-feedback/issues/new?template=bug.yml) |
 | Sheets missing, or an upgrade damaged your data | [Data problem](https://github.com/UnitPad/unitpad-feedback/issues/new?template=data.yml) |
+| A value, function or unit in a module is wrong or out of date | [Correction](https://github.com/UnitPad/modules/issues/new?template=correction.yml), in the modules repository |
 | An idea for something UnitPad should do | [Feature request](https://github.com/UnitPad/unitpad-feedback/issues/new?template=feature.yml) |
 | A question, or something to show | [Question](https://github.com/UnitPad/unitpad-feedback/discussions/new?category=q-a) |
 | A suspected security problem | [Security problem](https://github.com/UnitPad/unitpad-feedback/security/advisories/new). See [SECURITY.md](SECURITY.md) |
